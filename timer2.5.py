@@ -46,8 +46,7 @@ def initiatestopwatch():
     timepassed = endtime-starttime
     return timepassed
 
-def activitytracker():
-    activity = input("What activity would you like to do?")
+def activitytracker(activity):
     timerOrStopwatch = input("Send 1 if you'd like to set a designated amount of time for the activity or send 2 if you'd like to time yourself")
     if int(timerOrStopwatch) == 1:
         timerLength = initiatetimer()
@@ -64,6 +63,6 @@ def activitytracker():
 def main():
     while True:
         input("Press Enter to record an activity")
-        activity1 = activitytracker()
+        Sactivity = input("What activity would you like to do?")
+        activity1 = activitytracker(Sactivity)
         #here I'll probably end up recording the activities and this would repeat until the program is terminated
-activitytracker()
