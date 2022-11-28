@@ -27,6 +27,23 @@ print("hello"*10)
 #prints hello 10 times with no spaces, basically just repeats the string
 print("hello"+"goodbye")
 #prints hello and goodbye with no spaces.
+testvar = 5
+bestvar = 6
+lestvar = 7
+if testvar == 5 or lestvar == 8 or bestvar == 7:
+    print("at least one of them is the value being checked for")
+#basically checks if either testvar is 5, lestvar is 8, and bestvar is 7, since at least one of them is true it prints the statement.
+testvar = 5
+if testvar == 5 and lestvar == 8 and bestvar == 7:
+    print("all of the variables are the values being checked for")
+#basically the same thing as or, but instead of only one of them having to be true, all of them have to be
+print(not testvar == 5)
+#inverts the true/false value of any particular statement, here since testvar is equal to 5, it prints false, if testvar was say equal to 6 it would print True instead
+mestvar = 1
+for mestvar in range(1,6):
+    print(mestvar)
+#for loop that prints the numbers 1-5
+
 time.sleep(1)
 #tells the program to wait one second before prompting the user
 while 0 == 0: 
