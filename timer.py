@@ -3,6 +3,7 @@
 #Works cited
 #https://realpython.com/python-sleep/
 #https://www.saltycrane.com/blog/2011/11/how-get-username-home-directory-and-hostname-python/
+#https://www.digitalocean.com/community/tutorials/python-current-date-time
 import time
 import getpass
 userName = getpass.getuser()
