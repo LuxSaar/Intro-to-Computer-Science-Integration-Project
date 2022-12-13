@@ -7,6 +7,7 @@ time.sleep(1)
 
 
 def dotimer(tlength):
+      '''literally just the timer'''
     while tlength > 0:
         print(tlength)
         time.sleep(1)
@@ -20,6 +21,7 @@ def dotimer(tlength):
 
 
 def initiate_timer():
+      '''starts the timer depending on the number input'''
     timer_length0 = input("Set a timer (microwave format): ")
     if not timer_length0.isnumeric():
         print("invalid input")
@@ -37,6 +39,7 @@ def initiate_timer():
 
 
 def initiate_stopwatch():
+      '''starts the stopwatch'''
     input("Press Enter to start")
     start_time = time.time()
     input("Press Enter to stop")
@@ -46,6 +49,7 @@ def initiate_stopwatch():
 
 
 def activity_tracker(activity):
+      '''actually tracks the amount of time spent on the activity, however record is what writes it into the file, also asks for preference between timer and stopwatch'''
     print("Input 1 for Timer")
     print("Input 2 for Stopwatch (does not display current time)")
     timer_or_stopwatch = input()
@@ -84,6 +88,7 @@ def activity_tracker(activity):
 
 
 def record_activity(activity_iq):
+      '''records the activities'''
     date = str(datetime.date(datetime.now()))
     record_file = open(date + ".txt", 'a')
     record_file.write(str(activity_iq))
@@ -91,6 +96,7 @@ def record_activity(activity_iq):
 
 
 def main():
+      '''the main function, basically just the start menu and the way to exit the program'''
     sactivity = None
     while sactivity != "EP":
         input("Press Enter to record an activity")
