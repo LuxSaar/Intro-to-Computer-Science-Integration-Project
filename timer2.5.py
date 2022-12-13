@@ -57,18 +57,21 @@ def activity_tracker(activity):
         print("Invalid Input")
     elif int(timer_or_stopwatch) == 1:
         timer_length = initiate_timer()
-        valuethingy = round((int(timer_length)) / 60)
-        if round(int(timer_length)) <= 59:
-            valuethingy = round(int(timer_length))
-            print("You have completed a",
-                  int(round(int(timer_length))),
-                  "second session of", activity + "!")
-            return int(valuethingy), "seconds of", activity
+        if timer_length == None:
+            pass
         else:
-            print("You have completed a",
-                  int(round(int(timer_length)) / 60),
-                  "minute session of", activity + "!")
-            return int(valuethingy), "minutes of", activity
+            valuethingy = round((int(timer_length)) / 60)
+            if round(int(timer_length)) <= 59:
+                  valuethingy = round(int(timer_length))
+                  print("You have completed a",
+                        int(round(int(timer_length))),
+                        "second session of", activity + "!")
+                  return int(valuethingy), "seconds of", activity
+            else:
+                  print("You have completed a",
+                        int(round(int(timer_length)) / 60),
+                        "minute session of", activity + "!")
+                  return int(valuethingy), "minutes of", activity
     elif int(timer_or_stopwatch) == 2:
         stopwatch_length = initiate_stopwatch()
         valuethingy = round((int(stopwatch_length)) / 60)
