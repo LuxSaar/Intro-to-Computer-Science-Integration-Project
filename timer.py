@@ -1,4 +1,4 @@
-#Lucas Eusebio Veras
+__Author__ = "Lucas Eusebio Veras"
 #As of now it is quite literally just a timer, but hopefully I should be able to save values to make it into a time management program
 #Works cited
 #https://realpython.com/python-sleep/
