@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-
+__author__ = "Lucas Eusebio Veras"
 print("Hello User", "Welcome to Lux's Activity Tracker",
       sep="_", end=".\n")
 time.sleep(1)
